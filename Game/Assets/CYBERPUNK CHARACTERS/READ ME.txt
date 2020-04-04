@@ -1,0 +1,44 @@
+A character pack with which you can make a shooter or various others games top/down. It contains many 
+animations that give them charisma and unique style.
+
+11 Animations:
+
+– Idle
+
+– Walk
+
+– Run
+
+– Hurt
+
+– Defeated
+
+– Walk with Gun
+
+– Run with Gun
+
+– Pick Up
+
+– Climb
+
+– Roll
+
+– Shoot
+
+* The Sprite Sheets don't include guns, they go separately
+
+If you need something, contact me: azucena.na90@gmail.com
+
+Do you want to help me keep working and get exclusive rebates on my assets? Go through my PATREON, 
+any help is welcome.
+
+https://www.patreon.com/azunapixels
+
+TERMS OF USE:
+
+The purchase of this product is for PERSONAL AND COMERCIAL USE.
+
+© Copyright 2018 Art with Azuna Pixels ® ALL RIGHTS RESERVED. Permission is granted to use this asset to make 
+videogames. The reproduction of any part of this product is strictly prohibited. Copying any part of this 
+product and/or placing it on the Internet in any form (even a personal/commercial sale) is strictly forbidden. 
+Doing so is a violation of the Digital Millennium Copyright Act (DMCA).
