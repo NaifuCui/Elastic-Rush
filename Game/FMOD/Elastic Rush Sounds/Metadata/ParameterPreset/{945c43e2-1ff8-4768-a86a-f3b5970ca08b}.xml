@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{945c43e2-1ff8-4768-a86a-f3b5970ca08b}">
+		<property name="name">
+			<value>Border</value>
+		</property>
+		<relationship name="folder">
+			<destination>{92110e9a-136b-4b7e-894c-770aaf68f351}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{61101be1-d2c2-4113-a83d-d407099c401d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{61101be1-d2c2-4113-a83d-d407099c401d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

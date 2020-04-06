@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class MenuManager : MonoBehaviour
 {
@@ -570,8 +571,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 2:
                     if (Input.GetAxis("Joystick2 X") == 0)
                     {
@@ -607,8 +607,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 3:
                     if (Input.GetAxis("Joystick3 X") == 0)
                     {
@@ -644,8 +643,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 4:
                     if (Input.GetAxis("Joystick4 X") == 0)
                     {
@@ -681,8 +679,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 5:
                     if (Input.GetAxis("Joystick5 X") == 0)
                     {
@@ -718,8 +715,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 6:
                     if (Input.GetAxis("Joystick6 X") == 0)
                     {
@@ -755,8 +751,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 default: break;
             }
         }
@@ -799,8 +794,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 2:
                     if (Input.GetAxis("Joystick2 X") == 0)
                     {
@@ -836,8 +830,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 3:
                     if (Input.GetAxis("Joystick3 X") == 0)
                     {
@@ -873,8 +866,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 4:
                     if (Input.GetAxis("Joystick4 X") == 0)
                     {
@@ -910,8 +902,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 5:
                     if (Input.GetAxis("Joystick5 X") == 0)
                     {
@@ -947,8 +938,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 case 6:
                     if (Input.GetAxis("Joystick6 X") == 0)
                     {
@@ -984,8 +974,7 @@ public class MenuManager : MonoBehaviour
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }
-                    break;
+                    }                    break;
                 default: break;
             }
         }
@@ -1087,10 +1076,10 @@ public class MenuManager : MonoBehaviour
 
     void GoPlay()
     {
-        if (ControllerManager.instance.joinedPlayer < 2)
-        {
-            return;
-        }
+        //if (ControllerManager.instance.joinedPlayer < 2)
+        //{
+        //    return;
+        //}
         for (int i = 0; i < ControllerManager.instance.joinedPlayer; i++)
         {
             if (!isPlayerConfirmed[i])

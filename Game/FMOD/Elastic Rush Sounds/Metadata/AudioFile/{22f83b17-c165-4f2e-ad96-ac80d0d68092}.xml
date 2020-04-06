@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{22f83b17-c165-4f2e-ad96-ac80d0d68092}">
+		<property name="assetPath">
+			<value>Sound effects/Freezed.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.59208616780045353</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22555c9b-2ea4-4745-b49c-2cadfdff4bd3}</destination>
+		</relationship>
+	</object>
+</objects>

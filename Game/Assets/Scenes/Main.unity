@@ -185,11 +185,6 @@ MonoBehaviour:
   sonicGun: {fileID: 868268049}
   freezeGun: {fileID: 124012366}
   gravityGrenade: {fileID: 881227837}
-  defaultAudioSource: {fileID: 73298088}
-  weaponAudioSource: {fileID: 1436143797}
-  sonicGunAudioClip: {fileID: 8300000, guid: 9626e5d93a0e24843b90c884104c483d, type: 3}
-  freezeGunAudioClip: {fileID: 8300000, guid: 069fa9290ec83f6479f427eef8ea888d, type: 3}
-  dashAudioClip: {fileID: 8300000, guid: d5fd12a806dcebd428e49cc02c334b38, type: 3}
   deathSoundPrefab: {fileID: 3009224423239701209, guid: 8243d543ac8ee704587e26164de104d6,
     type: 3}
   freezedSoundPrefab: {fileID: 2217285864979581714, guid: bf681c27b7bceda489e5c67f2052b8f0,
@@ -214,6 +209,7 @@ MonoBehaviour:
     type: 3}
   animator: {fileID: 399798574}
   isDead: 0
+  movingDelta: 0
 --- !u!114 &73298085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -519,6 +515,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203005207}
   m_CullTransparentMesh: 0
+--- !u!1 &292362582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 292362584}
+  - component: {fileID: 292362583}
+  m_Layer: 0
+  m_Name: AlertSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &292362583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292362582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 670a22f7ee8f9394eb28b53cfd484671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventPath: event:/Ambience/Dangerous zone
+  minPos: -5
+  maxPos: 5
+--- !u!4 &292362584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292362582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &303514988
 GameObject:
   m_ObjectHideFlags: 0
@@ -2696,11 +2738,6 @@ MonoBehaviour:
   sonicGun: {fileID: 792926172}
   freezeGun: {fileID: 1989862041}
   gravityGrenade: {fileID: 1387883920}
-  defaultAudioSource: {fileID: 904818735}
-  weaponAudioSource: {fileID: 504187214}
-  sonicGunAudioClip: {fileID: 8300000, guid: 9626e5d93a0e24843b90c884104c483d, type: 3}
-  freezeGunAudioClip: {fileID: 8300000, guid: 069fa9290ec83f6479f427eef8ea888d, type: 3}
-  dashAudioClip: {fileID: 8300000, guid: d5fd12a806dcebd428e49cc02c334b38, type: 3}
   deathSoundPrefab: {fileID: 3009224423239701209, guid: 8243d543ac8ee704587e26164de104d6,
     type: 3}
   freezedSoundPrefab: {fileID: 2217285864979581714, guid: bf681c27b7bceda489e5c67f2052b8f0,
@@ -2725,6 +2762,7 @@ MonoBehaviour:
     type: 3}
   animator: {fileID: 1484538965}
   isDead: 0
+  movingDelta: 0
 --- !u!114 &904818732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3707,8 +3745,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1160010977}
   - component: {fileID: 1160010976}
-  - component: {fileID: 1160010975}
   - component: {fileID: 1160010978}
+  - component: {fileID: 1160010975}
+  - component: {fileID: 1160010979}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3716,14 +3755,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &1160010975
-AudioListener:
+--- !u!114 &1160010975
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160010974}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
 --- !u!20 &1160010976
 Camera:
   m_ObjectHideFlags: 0
@@ -3788,7 +3832,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1160010974}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9333a0faa2cd1ea49aa9b7cef7274086, type: 3}
@@ -3877,6 +3921,29 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1160010979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1160010974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  Event: event:/Music/Level theme music
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!1 &1194267112
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,11 +5229,6 @@ MonoBehaviour:
   sonicGun: {fileID: 478435298}
   freezeGun: {fileID: 845765774}
   gravityGrenade: {fileID: 1569231552}
-  defaultAudioSource: {fileID: 1523682017}
-  weaponAudioSource: {fileID: 1716266961}
-  sonicGunAudioClip: {fileID: 8300000, guid: 9626e5d93a0e24843b90c884104c483d, type: 3}
-  freezeGunAudioClip: {fileID: 8300000, guid: 069fa9290ec83f6479f427eef8ea888d, type: 3}
-  dashAudioClip: {fileID: 8300000, guid: d5fd12a806dcebd428e49cc02c334b38, type: 3}
   deathSoundPrefab: {fileID: 3009224423239701209, guid: 8243d543ac8ee704587e26164de104d6,
     type: 3}
   freezedSoundPrefab: {fileID: 2217285864979581714, guid: bf681c27b7bceda489e5c67f2052b8f0,
@@ -5191,6 +5253,7 @@ MonoBehaviour:
     type: 3}
   animator: {fileID: 576210887}
   isDead: 0
+  movingDelta: 0
 --- !u!114 &1523682014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6139,11 +6202,6 @@ MonoBehaviour:
   sonicGun: {fileID: 2146813409}
   freezeGun: {fileID: 2011758995}
   gravityGrenade: {fileID: 1645575010}
-  defaultAudioSource: {fileID: 1851409274}
-  weaponAudioSource: {fileID: 303514990}
-  sonicGunAudioClip: {fileID: 8300000, guid: 9626e5d93a0e24843b90c884104c483d, type: 3}
-  freezeGunAudioClip: {fileID: 8300000, guid: 069fa9290ec83f6479f427eef8ea888d, type: 3}
-  dashAudioClip: {fileID: 8300000, guid: d5fd12a806dcebd428e49cc02c334b38, type: 3}
   deathSoundPrefab: {fileID: 3009224423239701209, guid: 8243d543ac8ee704587e26164de104d6,
     type: 3}
   freezedSoundPrefab: {fileID: 2217285864979581714, guid: bf681c27b7bceda489e5c67f2052b8f0,
@@ -6168,6 +6226,7 @@ MonoBehaviour:
     type: 3}
   animator: {fileID: 936877510}
   isDead: 0
+  movingDelta: 0
 --- !u!114 &1851409271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7160,6 +7219,50 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4, y: 4}
   m_EdgeRadius: 0
+--- !u!1 &2138823977
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2138823979}
+  - component: {fileID: 2138823978}
+  m_Layer: 0
+  m_Name: SpeedUpSound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2138823978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138823977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b82673bb60a814aace51667620efa5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventPath: event:/Ambience/Speed up
+--- !u!4 &2138823979
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138823977}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2146813409
 GameObject:
   m_ObjectHideFlags: 0

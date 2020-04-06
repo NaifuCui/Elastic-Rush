@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class GravityGrenade : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class GravityGrenade : MonoBehaviour
 
     private void AttractObjects()
     {
-        Instantiate(gravityFieldSoundPrefab, transform.position, transform.rotation);
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Gravity grenade explosion");
+        //Instantiate(gravityFieldSoundPrefab, transform.position, transform.rotation);
         Collider2D[] cos = Physics2D.OverlapCircleAll(transform.position, range);
         foreach(var i in cos)
         {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class Player : MonoBehaviour
 {
@@ -24,12 +25,13 @@ public class Player : MonoBehaviour
     public GameObject freezeGun;
     public GameObject gravityGrenade;
 
-    public AudioSource defaultAudioSource;
-    public AudioSource weaponAudioSource;
+    //public AudioSource defaultAudioSource;
+    //public AudioSource weaponAudioSource;
 
-    public AudioClip sonicGunAudioClip;
-    public AudioClip freezeGunAudioClip;
-    public AudioClip dashAudioClip;
+    //public AudioClip sonicGunAudioClip;
+    //public AudioClip freezeGunAudioClip;
+    //public AudioClip dashAudioClip;
+
     public GameObject deathSoundPrefab;
     public GameObject freezedSoundPrefab;
 
@@ -56,6 +58,7 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     [HideInInspector] public bool isDead;
+    [HideInInspector] public float movingDelta;
 
     private Rigidbody2D rb;
     private float movementVelocity;
@@ -67,6 +70,8 @@ public class Player : MonoBehaviour
     private int sBulletsCount;
 
     private bool isFreezed;
+
+    //private Vector3 lastPosition;
 
 
     void Start()
@@ -87,7 +92,11 @@ public class Player : MonoBehaviour
     
     void Update()
     {
-
+        //if (lastPosition.y - transform.position.y > 0.1f) 
+        //{
+        //    RuntimeManager.PlayOneShot("event:/Sound Effects/Landing");
+        //}
+        //lastPosition = transform.position;
     }
 
     public void LookAt(float yRotation, float xDirection)
@@ -128,6 +137,8 @@ public class Player : MonoBehaviour
         {
             return;
         }
+
+        movingDelta = delta;
         if (delta == 0)
         {
             animator.SetBool("isWalking", false);
@@ -140,8 +151,14 @@ public class Player : MonoBehaviour
         }
         if (isFreezed)
         {
+            movingDelta = 0;
             return;
         }
+        
+
+        //Play Footsteps sound
+
+
         animator.SetBool("isWalking", true);
         movementVelocity += acceleration * delta * Time.deltaTime;
         movementVelocity = Mathf.Clamp(movementVelocity, -speed, speed);
@@ -191,8 +208,9 @@ public class Player : MonoBehaviour
         {
             rb.AddForce(new Vector2(-rushForce, 0));
         }
-        defaultAudioSource.clip = dashAudioClip;
-        defaultAudioSource.Play();
+        //defaultAudioSource.clip = dashAudioClip;
+        //defaultAudioSource.Play();
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Dash");
         isReadyRush = false;
         StartCoroutine(RushTimer());
     }
@@ -272,8 +290,9 @@ public class Player : MonoBehaviour
             go.transform.Rotate(0, 0, 135.0f);
         }
         SonicForce();
-        weaponAudioSource.clip = sonicGunAudioClip;
-        weaponAudioSource.Play();
+        //weaponAudioSource.clip = sonicGunAudioClip;
+        //weaponAudioSource.Play();
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Sonic gun shooting");
         isReadyShoot = false;
         StartCoroutine(ShootTimer());
         sBulletsCount--;
@@ -307,8 +326,9 @@ public class Player : MonoBehaviour
             go.GetComponent<Rigidbody2D>().velocity = -sonicEffectPoint.transform.right * shootSpeed;
 
         }
-        weaponAudioSource.clip = freezeGunAudioClip;
-        weaponAudioSource.Play();
+        //weaponAudioSource.clip = freezeGunAudioClip;
+        //weaponAudioSource.Play();
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Freeze gun shooting");
         isReadyShoot = false;
         StartCoroutine(ShootTimer());
         fBulletsCount--;
@@ -342,6 +362,10 @@ public class Player : MonoBehaviour
             go.GetComponent<Rigidbody2D>().velocity = -sonicEffectPoint.transform.right * throwSpeed;
 
         }
+
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Gravity grenade throwing");
+        //add throwing sound
+
         DeactiveAllWeapon();
     }
 
@@ -382,7 +406,8 @@ public class Player : MonoBehaviour
     {
         freezeBall.SetActive(true);
         isFreezed = true;
-        Instantiate(freezedSoundPrefab, transform.position, transform.rotation);
+        RuntimeManager.PlayOneShot("event:/Sound Effects/Freezed");
+        //Instantiate(freezedSoundPrefab, transform.position, transform.rotation);
         Invoke("UnFreezeSelf", freezeTime);
     }
 
@@ -403,6 +428,9 @@ public class Player : MonoBehaviour
         if (collision.gameObject.tag.Equals("DangerWall"))
         {
             isDead = true;
+            RuntimeManager.PlayOneShot("event:/Sound Effects/Death");
+            //Play death sound
+
             Instantiate(deathSoundPrefab, transform.position, transform.rotation);
             if (Mathf.Abs(transform.position.y - 5) < Mathf.Abs(transform.position.y + 5))
             {
@@ -414,6 +442,12 @@ public class Player : MonoBehaviour
             }
             this.gameObject.SetActive(false);
             GameManager.instance.CheckWin();
+        }
+        if (collision.gameObject.tag.Equals("Obstacles") && Mathf.Abs(rb.velocity.y) < 0.1f)
+        {
+            RuntimeManager.PlayOneShot("event:/Sound Effects/Landing");
+            //Play Landing sound
+
         }
     }
 }
