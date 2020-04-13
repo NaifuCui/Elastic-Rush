@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using FMOD.Studio;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +23,8 @@ public class GameManager : MonoBehaviour
     public Text winText;
     public Button winRestartButton;
     public Button winMenuButton;
+
+    public GameObject BgmManager;
 
     [HideInInspector] public bool isPaused;
     [HideInInspector] public bool isEnded;
@@ -60,6 +63,7 @@ public class GameManager : MonoBehaviour
 
         pausePanel.SetActive(false);
         winPanel.SetActive(false);
+        BgmManager.SetActive(true); //level bgm enabled
 
 
         Physics2D.IgnoreLayerCollision(8, 9);
@@ -75,6 +79,11 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
+        //if (Time.timeScale == 1)
+        //{
+        //    EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
+        //    inGamePause.release();
+        //}
     }
 
     //void IconFollow()
@@ -98,6 +107,7 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
+        EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
         if (isPaused)
         {
             Time.timeScale = 1;
@@ -106,6 +116,10 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            inGamePause.start();
+            //call snapshot pause
+            //HOW TO STOP THAT SNAPSHOT?????
+
             Time.timeScale = 0;
             isPaused = true;
             pausePanel.SetActive(true);
@@ -146,6 +160,7 @@ public class GameManager : MonoBehaviour
     void Win(int playerNum)
     {
         winPanel.SetActive(true);
+        BgmManager.SetActive(false); //level bgm disabled
         winText.text = "Player" + (playerNum + 1).ToString() + " Win!";
         isEnded = true;
         Time.timeScale = 0;

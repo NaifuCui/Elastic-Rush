@@ -12,6 +12,7 @@ public class AmbienceAlert : MonoBehaviour
     public float minPos;
     public float maxPos;
 
+    public GameObject BgmManager;
 
     private EventInstance eventRef;
     private float value = 0.0f;
@@ -33,6 +34,10 @@ public class AmbienceAlert : MonoBehaviour
         float minV = 0;
         for (int i = 0; i < GameManager.instance.characters.Length; i++) 
         {
+            if(GameManager.instance.characters[i].activeSelf == false)
+            {
+                continue;
+            }
             float v = (GameManager.instance.characters[i].transform.position.y - minPos) / (maxPos - minPos);
             float d = (v > 1 - v) ? 1 - v : v;
             if (d < minD)
@@ -43,5 +48,10 @@ public class AmbienceAlert : MonoBehaviour
         }
         value = minV;
         eventRef.setParameterByName("Border", value);
+
+        if (!BgmManager.activeSelf)
+        {
+            value = 0.0f;
+        }//stop playing ambiencesound
     }
 }

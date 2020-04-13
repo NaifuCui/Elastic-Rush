@@ -184,6 +184,12 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2891d83b-9899-4252-a655-935b92829bc8}">
+		<property name="start">
+			<value>0.01</value>
+		</property>
+		<property name="length">
+			<value>0.98999999999999999</value>
+		</property>
 		<property name="looping">
 			<value>true</value>
 		</property>
@@ -219,8 +225,11 @@
 		</relationship>
 	</object>
 	<object class="SoundScatterer" id="{e5b73173-86ab-42ee-bdc7-e5244de50cac}">
+		<property name="start">
+			<value>0.01</value>
+		</property>
 		<property name="length">
-			<value>0.99999999999999989</value>
+			<value>0.98999999999999988</value>
 		</property>
 		<property name="minimumTimeBetweenSounds">
 			<value>8000</value>

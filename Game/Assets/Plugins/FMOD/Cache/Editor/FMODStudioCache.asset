@@ -52,6 +52,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8761476387397743785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223276456083673
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-8707262096502559140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87,6 +105,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8495097610818857733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-8352213126120888981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,6 +140,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8348322517914218519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223276455329642
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7879148786248502024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,7 +232,7 @@ MonoBehaviour:
   Path: event:/Interface/Confirm
   guid: c8cd198c65055e4789235bb2eeef1942
   Banks:
-  - {fileID: 3807911114889582767}
+  - {fileID: 8788575414077601045}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -202,7 +255,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Gravity grenade explosion
   guid: 2b20c5ff3829cd4c94fd8f258ed02af0
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -340,6 +393,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6510823037297470721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223276455010493
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-6479284666009108080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -416,6 +487,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6096275760605297104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-6093798266467159557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -448,14 +536,32 @@ MonoBehaviour:
   Path: event:/Music/Result music
   guid: 8536b926c0b7ca4ca8e79afbd3aa2911
   Banks:
-  - {fileID: 1287914816098797940}
-  IsStream: 0
+  - {fileID: 9078361102629856216}
+  IsStream: 1
   Is3D: 0
-  IsOneShot: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
+  Length: 14535
+--- !u!114 &-5945440551203292076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223333946889287
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5908043049953306034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -473,6 +579,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &-5845311191802790015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223288314518392
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-5813075866796433873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +638,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5622508798543917900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-5318478378753335443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223296810760209
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-5269736507785775925
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,6 +711,23 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1832
   Exists: 1
+--- !u!114 &-5229111760725989628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-5063140303370118979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,7 +743,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Dash
   guid: f6216022ba1db148ade1b2d6e56fab07
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -626,7 +802,7 @@ MonoBehaviour:
   Path: event:/Interface/Select
   guid: 0f0da4acbfea9949aafbb59fd9de2cd6
   Banks:
-  - {fileID: 3807911114889582767}
+  - {fileID: 8788575414077601045}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -706,6 +882,82 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3766097314585116132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Pause
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Pause
+  guid: 9b53ac7776cb8646949ca3c32ba91cb9
+  Banks:
+  - {fileID: 3132370400377828924}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-3750337263572242333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223320614765637
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3695913223115679907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-3466409746096498846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223345523641446
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3434726969220116781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,6 +981,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13908
+--- !u!114 &-3418496416026633348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-3205764612303802508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,11 +1012,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637217391076095624
+  lastModified: 637223345524100221
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1878
+    Value: 2362
   Exists: 1
 --- !u!114 &-3128476480905716290
 MonoBehaviour:
@@ -764,15 +1033,33 @@ MonoBehaviour:
   Path: event:/Sound Effects/Footsteps
   guid: 9cec8793201e47419539c41ed1135ddf
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 921676198424674487}
+  - {fileID: 2893024059693972441}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-3000023119534392166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223333946161251
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-2707369445197327775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +1093,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Freeze gun shooting
   guid: 84957b93b7b6134c911bd5f59541753c
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -867,6 +1154,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-2236851951889296532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223296811179099
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-2112151554236138748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -908,6 +1213,59 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-1922776159621804439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223320615132684
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1877154446976185708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223284521614920
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1717394111550597735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1421591600935322986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,7 +1304,7 @@ MonoBehaviour:
   Path: event:/Interface/Cancel
   guid: a91f2aa309691c498ba8715d4bccadeb
   Banks:
-  - {fileID: 3807911114889582767}
+  - {fileID: 8788575414077601045}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -987,7 +1345,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Freezed
   guid: 2ac618774833a24a87c440141fac54b7
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -995,6 +1353,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 592
+--- !u!114 &-1158442508099223293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-792533880202840006
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1013,6 +1388,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-613077386705628833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &-604723531755149238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1030,6 +1422,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-434041118460787253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223296812076696
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1044,11 +1454,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: -3205764612303802508}
-  - {fileID: 2884897367125400358}
-  - {fileID: 3807911114889582767}
-  - {fileID: 2822704204321545446}
-  - {fileID: 1287914816098797940}
-  - {fileID: 6494407303865670276}
+  - {fileID: -3466409746096498846}
+  - {fileID: 8788575414077601045}
+  - {fileID: 3132370400377828924}
+  - {fileID: 9078361102629856216}
+  - {fileID: 9134779114810820513}
   EditorEvents:
   - {fileID: 8230333324486132326}
   - {fileID: 6578002823269756643}
@@ -1067,12 +1477,17 @@ MonoBehaviour:
   - {fileID: 9139526225909904956}
   - {fileID: -5063140303370118979}
   - {fileID: -7550523145869004049}
+  - {fileID: -3766097314585116132}
+  - {fileID: 7972989553364316301}
+  - {fileID: 8665233650365236423}
+  - {fileID: 8273778195984071858}
+  - {fileID: 7290735329008383382}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2822704204321545446}
+  - {fileID: 3132370400377828924}
   StringsBanks:
   - {fileID: -3205764612303802508}
-  stringsBankWriteTime: 637217391076095624
+  stringsBankWriteTime: 637223345524100221
   cacheVersion: 3
 --- !u!114 &235050634331802834
 MonoBehaviour:
@@ -1091,6 +1506,23 @@ MonoBehaviour:
   lastModified: 637217253087686156
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &294179971563986062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 0
 --- !u!114 &399945589687338978
 MonoBehaviour:
@@ -1122,6 +1554,23 @@ MonoBehaviour:
   m_Name: parameter:/Dangerous zone/Border
   m_EditorClassIdentifier: 
   Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &563700767175415228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
   Min: 0
   Max: 1
   Default: 0
@@ -1178,7 +1627,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &1069687140259603795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1254,7 +1703,7 @@ MonoBehaviour:
   lastModified: 637217391076923115
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &1302247427200789705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,7 +1720,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &1503967139452657907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,7 +1753,7 @@ MonoBehaviour:
   Path: event:/Music/Title music
   guid: 594970d9d2b63a4eb44fde4e777cb776
   Banks:
-  - {fileID: 1287914816098797940}
+  - {fileID: 9078361102629856216}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1312,6 +1761,42 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 13908
+--- !u!114 &1582464673672527455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223333946540223
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &1623834456843177068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223276455259828
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &1772180821924293226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1336,6 +1821,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &1935115627918522612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223284523168487
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2078504762616475026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2181421485304077392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,7 +1871,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Death
   guid: 4295ebe957bf1e4181f57d86e981aff6
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1359,6 +1879,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1458
+--- !u!114 &2211601008610172661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2213376457077197984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223320615481743
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2240644181136372067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1377,6 +1932,42 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &2335894457092698531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223288313540342
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &2522574693438525230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223296811568066
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2522665496846510852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,7 +2003,41 @@ MonoBehaviour:
   lastModified: 637217391076055437
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &2845781374501467335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &2857536249311665280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &2884897367125400358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1430,6 +2055,23 @@ MonoBehaviour:
   lastModified: 637217391076354950
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &2893024059693972441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
 --- !u!114 &2978550109522758141
 MonoBehaviour:
@@ -1467,6 +2109,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &3132370400377828924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223345524040412
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3158971288814437080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1501,6 +2161,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &3195726521859691775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223320615044894
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &3451896869389539329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1524,6 +2202,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &3600312740910909457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223288313230748
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3634447192139585042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1540,7 +2236,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &3807911114889582767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1558,7 +2254,7 @@ MonoBehaviour:
   lastModified: 637217391076613919
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &3812923698042595430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1600,6 +2296,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4104030857511391823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223288313999777
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &4129522336904234200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1618,6 +2332,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &4162853457563220834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223284522060019
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4222068391737859915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,6 +2390,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &4762043807883539619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223284522624236
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4766093883280107087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1715,7 +2465,7 @@ MonoBehaviour:
   Path: event:/Music/Level theme music
   guid: 5b47a0d409d0ab4e9cf0f9807d7c7f00
   Banks:
-  - {fileID: 1287914816098797940}
+  - {fileID: 9078361102629856216}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -1723,6 +2473,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 81269
+--- !u!114 &4930442590321852018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223276455648802
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5021997654202548765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1823,6 +2591,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &5624782151343238054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223296811079355
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5900469308713863705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1841,6 +2627,41 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &5919243272102520089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223320615860741
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6401053625554434017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &6494407303865670276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1858,7 +2679,7 @@ MonoBehaviour:
   lastModified: 637217391077551420
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
 --- !u!114 &6578002823269756643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1874,15 +2695,33 @@ MonoBehaviour:
   Path: event:/Ambience/Dangerous zone
   guid: a53df1e1d0387541b7e9ed4332a4e9ec
   Banks:
-  - {fileID: 2884897367125400358}
+  - {fileID: -3466409746096498846}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 1302247427200789705}
+  - {fileID: -6096275760605297104}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &6589408605236800383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637223288313620796
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &6675194366379338239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,7 +2737,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Gravity grenade throwing
   guid: 913a7baae25c494aaf5c589068db2a17
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1921,7 +2760,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Sonic gun shooting
   guid: 12b18ba8c359f34d977fbfaf9750f0e7
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -1946,6 +2785,82 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &7290735329008383382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Resume
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Resume
+  guid: 71cb87692b63b04a91b44bd66e8d3aff
+  Banks:
+  - {fileID: 3132370400377828924}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7337158795966372136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &7346178264617810840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223333946061505
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &7380014003423110313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223284521944753
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &7494039229888953610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,6 +2954,63 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1458
+--- !u!114 &7894152039788343094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Footsteps/Step
+  m_EditorClassIdentifier: 
+  Name: Step
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7917066891638655298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Speed up/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &7972989553364316301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Effects/Sonic gun pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Sonic gun pickup
+  guid: 2153f0b7aae8db478f02559cf741a613
+  Banks:
+  - {fileID: 9134779114810820513}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 530
 --- !u!114 &8230333324486132326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2054,15 +3026,38 @@ MonoBehaviour:
   Path: event:/Ambience/Speed up
   guid: 3d03e3dc26cace459beeb10f12175c5d
   Banks:
-  - {fileID: 2884897367125400358}
-  IsStream: 0
-  Is3D: 0
+  - {fileID: -3466409746096498846}
+  IsStream: 1
+  Is3D: 1
   IsOneShot: 0
   Parameters:
-  - {fileID: 3634447192139585042}
+  - {fileID: 563700767175415228}
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &8273778195984071858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Effects/Gravity grenade pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Gravity grenade pickup
+  guid: c47d384623dce04484dcdc3e12e879e3
+  Banks:
+  - {fileID: 9134779114810820513}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 121
 --- !u!114 &8296819014597772760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2098,6 +3093,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &8389017022921787639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Dangerous zone/Border
+  m_EditorClassIdentifier: 
+  Name: Border
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &8432534134242298272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2116,6 +3128,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8469253629667049993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Ambience.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Ambience.bank
+  SubDir: 
+  lastModified: 637223333945742369
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8469462508209273425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2157,6 +3187,47 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 81269
+--- !u!114 &8665233650365236423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Sound Effects/Freeze gun pickup
+  m_EditorClassIdentifier: 
+  Path: event:/Sound Effects/Freeze gun pickup
+  guid: 4c8472d5c7d7c8419e91748f7f2abc00
+  Banks:
+  - {fileID: 9134779114810820513}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 407
+--- !u!114 &8788575414077601045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Interface.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Interface.bank
+  SubDir: 
+  lastModified: 637223345523940676
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8845201927061318070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2215,6 +3286,42 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &9078361102629856216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Music.bank
+  SubDir: 
+  lastModified: 637223345524559018
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &9134779114810820513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Sound Effects.bank
+  m_EditorClassIdentifier: 
+  Path: FMOD/Elastic Rush Sounds/Build/Desktop/Sound Effects.bank
+  SubDir: 
+  lastModified: 637223345525127496
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &9139526225909904956
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2230,7 +3337,7 @@ MonoBehaviour:
   Path: event:/Sound Effects/Landing
   guid: e1236d7965c83548a252c5f743c8a78d
   Banks:
-  - {fileID: 6494407303865670276}
+  - {fileID: 9134779114810820513}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1

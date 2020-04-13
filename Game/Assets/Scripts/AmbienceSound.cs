@@ -12,6 +12,8 @@ public class AmbienceSound : MonoBehaviour
 
     private EventInstance eventRef;
     private float value = 0.0f;
+
+    public GameObject BgmManager;
     void Start()
     {
         eventRef = RuntimeManager.CreateInstance("event:/Ambience/Speed up");
@@ -25,5 +27,10 @@ public class AmbienceSound : MonoBehaviour
         value = (MapCreator.instance.movingSpeed - MapCreator.instance.minMovingSpeed) /
             (MapCreator.instance.maxMovingSpeed - MapCreator.instance.minMovingSpeed);
         eventRef.setParameterByName("Speed", value);
+
+        if (!BgmManager.activeSelf)
+        {
+            value = 0.0f;
+        }//stop playing ambiencesound
     }
 }
