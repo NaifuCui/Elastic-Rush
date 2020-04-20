@@ -4,6 +4,12 @@
 		<property name="name">
 			<value>Ambience</value>
 		</property>
+		<property name="pitch">
+			<value>1</value>
+		</property>
+		<relationship name="masters">
+			<destination>{d11ff80c-65b5-4ae0-96ef-baf71158b8c5}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{126a40ba-910e-414a-8517-c933e484c0e1}</destination>
 		</relationship>

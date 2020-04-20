@@ -17,10 +17,18 @@ public class MenuManager : MonoBehaviour
     public Button playButton;
     public Button creditsButton;
     public Button backButton;
+    public Button settingButton;
     public Button exitButton;
     public Button goButton;
     public Button creditBackButton;
 
+    public Slider masterVolumeSlider;
+    public Slider musicVolumeSlider;
+    public Slider soundEffectsVolumeSlider;
+    public Button settingBackButton;
+    public RectTransform soundEffectsVolumeHandle;
+
+    public GameObject settingPanel;
     public GameObject choosePanel;
     public GameObject initialPanel;
     public GameObject creditsPanel;
@@ -29,6 +37,8 @@ public class MenuManager : MonoBehaviour
     private bool[] isCharacterSelected = new bool[4];
     private bool[] isControllerJoined = new bool[8];
     private bool[] playerChooseState = new bool[4];
+
+    private float lastSoundEffectsVolume;
 
     void Start()
     {
@@ -57,13 +67,22 @@ public class MenuManager : MonoBehaviour
         goButton.onClick.AddListener(GoPlay);
         creditsButton.onClick.AddListener(ShowCreditsPanel);
         creditBackButton.onClick.AddListener(HideCreditsPanel);
+
+        settingButton.onClick.AddListener(ShowSettingPanel);
+        settingBackButton.onClick.AddListener(HideSettingPanel);
+        masterVolumeSlider.onValueChanged.AddListener(delegate { ChangeMasterVolume(); });
+        musicVolumeSlider.onValueChanged.AddListener(delegate { ChangeMusicVolume(); });
+        SetVolumes();
+
         HideChoosePanel();
         HideCreditsPanel();
+        HideSettingPanel();
     }
 
 
     void Update()
     {
+        ChangeSoundEffectsVolume();
         if (!choosePanel.activeSelf)
         {
             return;
@@ -1072,6 +1091,73 @@ public class MenuManager : MonoBehaviour
     {
         creditsPanel.SetActive(false);
         initialPanel.SetActive(true);
+    }
+
+    void ShowSettingPanel()
+    {
+        initialPanel.SetActive(false);
+        settingPanel.SetActive(true);
+        SetVolumes();
+    }
+
+    void HideSettingPanel()
+    {
+        initialPanel.SetActive(true);
+        settingPanel.SetActive(false);
+    }
+
+    void SetVolumes()
+    {
+        string vcaPath1 = "vca:/MasterVolume";
+        FMOD.Studio.VCA vca1 = FMODUnity.RuntimeManager.GetVCA(vcaPath1);
+        float masterVolumeValue;
+        vca1.getVolume(out masterVolumeValue);
+
+        string vcaPath2 = "vca:/MasterMusicVolume";
+        FMOD.Studio.VCA vca2 = FMODUnity.RuntimeManager.GetVCA(vcaPath2);
+        float musicVolumeValue;
+        vca1.getVolume(out musicVolumeValue);
+
+        string vcaPath3 = "vca:/MasterSFXVolume";
+        FMOD.Studio.VCA vca3 = FMODUnity.RuntimeManager.GetVCA(vcaPath3);
+        float soundEffectsVolumeValue;
+        vca1.getVolume(out soundEffectsVolumeValue);
+
+        masterVolumeSlider.value = masterVolumeValue;
+        musicVolumeSlider.value = musicVolumeValue;
+        soundEffectsVolumeSlider.value = soundEffectsVolumeValue;
+    }
+
+    void ChangeMasterVolume()
+    {
+        string vcaPath = "vca:/MasterVolume";
+        FMOD.Studio.VCA vca = FMODUnity.RuntimeManager.GetVCA(vcaPath);
+        vca.setVolume(masterVolumeSlider.value);
+    }
+
+    void ChangeMusicVolume()
+    {
+        string vcaPath = "vca:/MasterMusicVolume";
+        FMOD.Studio.VCA vca = FMODUnity.RuntimeManager.GetVCA(vcaPath);
+        vca.setVolume(musicVolumeSlider.value);
+    }
+
+    void ChangeSoundEffectsVolume()
+    {
+        if((Input.GetMouseButtonUp(1) || Input.GetMouseButtonUp(2) || Input.GetMouseButtonUp(0)) && Vector3.Distance(Input.mousePosition, soundEffectsVolumeHandle.position) < 17)
+        {
+            
+            PlayTestSoundEffects();
+        }
+        string vcaPath = "vca:/MasterSFXVolume";
+        FMOD.Studio.VCA vca = FMODUnity.RuntimeManager.GetVCA(vcaPath);
+        vca.setVolume(soundEffectsVolumeSlider.value);
+        lastSoundEffectsVolume = soundEffectsVolumeSlider.value;
+    }
+
+    void PlayTestSoundEffects()
+    {
+        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
     }
 
     void GoPlay()

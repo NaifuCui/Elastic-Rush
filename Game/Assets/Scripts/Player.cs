@@ -425,7 +425,7 @@ public class Player : MonoBehaviour
             dir = new Vector2(dir.x, dir.y * verticalBouncingValue);
             rb.AddForce(dir * bouncingForce);
         }
-        if (collision.gameObject.tag.Equals("DangerWall"))
+        if (collision.gameObject.tag.Equals("DangerWall") && !isDead)
         {
             isDead = true;
             RuntimeManager.PlayOneShot("event:/Sound Effects/Death");

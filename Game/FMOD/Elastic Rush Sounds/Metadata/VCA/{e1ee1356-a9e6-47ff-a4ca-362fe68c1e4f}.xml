@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
-	<object class="MixerVCA" id="{f9db8430-286a-47ea-a197-4a64bea4ecaf}">
+	<object class="MixerVCA" id="{e1ee1356-a9e6-47ff-a4ca-362fe68c1e4f}">
 		<property name="name">
-			<value>Items</value>
+			<value>MasterVolume</value>
 		</property>
 		<relationship name="mixer">
 			<destination>{2fb058bc-ae8b-4198-b676-784209e790e1}</destination>
