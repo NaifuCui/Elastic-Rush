@@ -29,6 +29,8 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public bool isPaused;
     [HideInInspector] public bool isEnded;
 
+    private EventInstance inGamePause;
+
     private void Awake()
     {
         if (instance == null)
@@ -67,18 +69,9 @@ public class GameManager : MonoBehaviour
 
         Physics2D.IgnoreLayerCollision(8, 9);
 
-        EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
 
         //call snapshot pause
-        if (Time.timeScale == 0)
-        {
-            Debug.Log(11100);//test
-            inGamePause.start();
-        }
-        else
-        {
-            inGamePause.release();
-        }
+        inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
 
     }
 
@@ -120,12 +113,14 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             isPaused = false;
             pausePanel.SetActive(false);
+            inGamePause.release();
         }
         else
         {
             Time.timeScale = 0;
             isPaused = true;
             pausePanel.SetActive(true);
+            inGamePause.start();
         }
     }
 
