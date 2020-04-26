@@ -65,8 +65,21 @@ public class GameManager : MonoBehaviour
         winPanel.SetActive(false);
         BgmManager.SetActive(true); //level bgm enabled
 
-
         Physics2D.IgnoreLayerCollision(8, 9);
+
+        EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
+
+        //call snapshot pause
+        if (Time.timeScale == 0)
+        {
+            Debug.Log(11100);//test
+            inGamePause.start();
+        }
+        else
+        {
+            inGamePause.release();
+        }
+
     }
 
     void Update()
@@ -79,11 +92,6 @@ public class GameManager : MonoBehaviour
         {
             return;
         }
-        //if (Time.timeScale == 1)
-        //{
-        //    EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
-        //    inGamePause.release();
-        //}
     }
 
     //void IconFollow()
@@ -107,7 +115,6 @@ public class GameManager : MonoBehaviour
 
     public void PauseGame()
     {
-        EventInstance inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
         if (isPaused)
         {
             Time.timeScale = 1;
@@ -116,10 +123,6 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            inGamePause.start();
-            //call snapshot pause
-            //HOW TO STOP THAT SNAPSHOT?????
-
             Time.timeScale = 0;
             isPaused = true;
             pausePanel.SetActive(true);

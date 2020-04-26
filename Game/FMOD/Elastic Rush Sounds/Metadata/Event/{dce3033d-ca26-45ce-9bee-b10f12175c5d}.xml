@@ -241,10 +241,10 @@
 			<value>14000</value>
 		</property>
 		<property name="minimumScatterDistance">
-			<value>2</value>
+			<value>0</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>6</value>
+			<value>0</value>
 		</property>
 		<relationship name="automators">
 			<destination>{9ec71327-0c2e-4e9b-8ff5-dd6539388871}</destination>
@@ -299,7 +299,7 @@
 			<value>0</value>
 		</property>
 		<property name="maximumScatterDistance">
-			<value>2</value>
+			<value>0</value>
 		</property>
 		<relationship name="modulators">
 			<destination>{be7bc320-632e-4c0b-99e3-6c4a5dc910d1}</destination>
@@ -529,10 +529,10 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-15</value>
+			<value>-24</value>
 		</property>
 		<property name="curveShape">
-			<value>0.110922158</value>
+			<value>-0.313744426</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{af04c46b-8cbd-48d7-b408-0e11ea923831}">
@@ -564,7 +564,10 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>-10</value>
+			<value>-18</value>
+		</property>
+		<property name="curveShape">
+			<value>-0.418765694</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ccf9d2eb-3b98-4246-b688-dba4ef296eeb}">
