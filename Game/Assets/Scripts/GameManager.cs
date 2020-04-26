@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             isPaused = false;
             pausePanel.SetActive(false);
-            inGamePause.release();
+            inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         }
         else
         {
