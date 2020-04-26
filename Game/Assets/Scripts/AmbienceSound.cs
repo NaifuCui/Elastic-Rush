@@ -33,4 +33,9 @@ public class AmbienceSound : MonoBehaviour
             value = 0.0f;
         }//stop playing ambiencesound
     }
+
+    public void StopSound()
+    {
+        eventRef.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+    }
 }

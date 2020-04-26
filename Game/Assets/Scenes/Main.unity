@@ -3797,6 +3797,8 @@ MonoBehaviour:
   winRestartButton: {fileID: 463694903}
   winMenuButton: {fileID: 402961664}
   BgmManager: {fileID: 1794817906}
+  speedUpSound: {fileID: 2138823978}
+  alertSound: {fileID: 292362583}
   isPaused: 0
   isEnded: 0
 --- !u!4 &1146108807

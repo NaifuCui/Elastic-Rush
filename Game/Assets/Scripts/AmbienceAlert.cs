@@ -53,5 +53,13 @@ public class AmbienceAlert : MonoBehaviour
         {
             value = 0.0f;
         }//stop playing ambiencesound
+        float temp;
+        eventRef.getParameterByName("Border", out temp);
+        Debug.Log(temp);
+    }
+
+    public void StopSound()
+    {
+        eventRef.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
     }
 }

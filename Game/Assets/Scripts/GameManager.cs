@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using FMOD.Studio;
+using FMODUnity;
 
 public class GameManager : MonoBehaviour
 {
@@ -26,10 +27,14 @@ public class GameManager : MonoBehaviour
 
     public GameObject BgmManager;
 
+    public AmbienceSound speedUpSound;
+    public AmbienceAlert alertSound;
+
     [HideInInspector] public bool isPaused;
     [HideInInspector] public bool isEnded;
 
     private EventInstance inGamePause;
+
 
     private void Awake()
     {
@@ -69,9 +74,9 @@ public class GameManager : MonoBehaviour
 
         Physics2D.IgnoreLayerCollision(8, 9);
 
-
         //call snapshot pause
         inGamePause = FMODUnity.RuntimeManager.CreateInstance("snapshot:/Pause");
+
 
     }
 
@@ -126,6 +131,9 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
+        inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        speedUpSound.StopSound();
+        alertSound.StopSound();
         Time.timeScale = 1;
         SceneManager.LoadScene(1);
     }
@@ -133,8 +141,12 @@ public class GameManager : MonoBehaviour
     void BackToMenu()
     {
         Time.timeScale = 1;
+        inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
         Destroy(ControllerManager.instance.gameObject);
+        speedUpSound.StopSound();
+        alertSound.StopSound();
         SceneManager.LoadScene(0);
+        //reset parameters
     }
 
     public void CheckWin()
