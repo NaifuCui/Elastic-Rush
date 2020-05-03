@@ -189,7 +189,7 @@ public class FMODEventPlayableBehavior : PlayableBehaviour
         isPlayheadInside = false;
         if (eventInstance.isValid())
         {
-            eventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            eventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
             eventInstance.release();
             FMODUnity.RuntimeManager.StudioSystem.update();
         }

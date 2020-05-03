@@ -644,7 +644,7 @@ namespace FMODUnity
         {
             if (previewEventInstance.isValid())
             {
-                previewEventInstance.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                previewEventInstance.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
                 previewEventInstance.release();
                 previewEventInstance.clearHandle();
                 previewEventDesc.clearHandle();

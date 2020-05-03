@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="AudioFile" id="{4c3a47a4-1181-445b-8272-7f2ab27c4965}">
+		<property name="assetPath">
+			<value>Dash-remake.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.25879818594104309</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22555c9b-2ea4-4745-b49c-2cadfdff4bd3}</destination>
+		</relationship>
+	</object>
+</objects>

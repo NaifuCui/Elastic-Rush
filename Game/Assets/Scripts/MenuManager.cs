@@ -109,6 +109,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick1 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -118,6 +119,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -126,12 +128,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 2:
@@ -146,6 +150,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick2 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -155,6 +160,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick2Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -163,12 +169,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick2Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 3:
@@ -183,6 +191,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick3 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -192,6 +201,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick3Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -200,12 +210,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick3Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 4:
@@ -220,6 +232,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick4 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -229,6 +242,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick4Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -237,12 +251,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick4Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 5:
@@ -257,6 +273,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick5 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -266,6 +283,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick5Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -274,12 +292,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick5Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 6:
@@ -294,6 +314,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]++;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick6 X") < 0 && !playerChooseState[0] && !isPlayerConfirmed[0])//Left
@@ -303,6 +324,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[0]--;
                             playerIcons[0].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[0] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick6Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]])//Y/△
@@ -311,12 +333,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].sprite = selectImages[0];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick6Button3) && isPlayerConfirmed[0])//Y/△
                     {
                         isPlayerConfirmed[0] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[0]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[0]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 default: break;
@@ -338,6 +362,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick1 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -347,6 +372,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -355,12 +381,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 2:
@@ -375,6 +403,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick2 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -384,6 +413,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick2Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -392,12 +422,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick2Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 3:
@@ -412,6 +444,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick3 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -421,6 +454,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick3Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -429,12 +463,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick3Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 4:
@@ -449,6 +485,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick4 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -458,6 +495,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick4Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -466,12 +504,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick4Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 5:
@@ -486,6 +526,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick5 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -495,6 +536,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick5Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -503,12 +545,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick5Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 case 6:
@@ -523,6 +567,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]++;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick6 X") < 0 && !playerChooseState[1] && !isPlayerConfirmed[1])//Left
@@ -532,6 +577,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[1]--;
                             playerIcons[1].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[1] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick6Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]])//Y/△
@@ -540,12 +586,14 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].sprite = selectImages[1];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick6Button3) && isPlayerConfirmed[1])//Y/△
                     {
                         isPlayerConfirmed[1] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[1]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[1]].gameObject.SetActive(false);
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
                     }
                     break;
                 default: break;
@@ -567,6 +615,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick1 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -576,6 +625,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -584,13 +634,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 2:
                     if (Input.GetAxis("Joystick2 X") == 0)
                     {
@@ -603,6 +656,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick2 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -612,6 +666,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick2Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -620,13 +675,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick2Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 3:
                     if (Input.GetAxis("Joystick3 X") == 0)
                     {
@@ -639,6 +697,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick3 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -648,6 +707,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick3Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -656,13 +716,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick3Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 4:
                     if (Input.GetAxis("Joystick4 X") == 0)
                     {
@@ -675,6 +738,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick4 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -684,6 +748,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick4Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -692,13 +757,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick4Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 5:
                     if (Input.GetAxis("Joystick5 X") == 0)
                     {
@@ -711,6 +779,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick5 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -720,6 +789,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick5Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -728,13 +798,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick5Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 6:
                     if (Input.GetAxis("Joystick6 X") == 0)
                     {
@@ -747,6 +820,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]++;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick6 X") < 0 && !playerChooseState[2] && !isPlayerConfirmed[2])//Left
@@ -756,6 +830,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[2]--;
                             playerIcons[2].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[2] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick6Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]])//Y/△
@@ -764,13 +839,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].sprite = selectImages[2];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick6Button3) && isPlayerConfirmed[2])//Y/△
                     {
                         isPlayerConfirmed[2] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[2]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[2]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 default: break;
             }
         }
@@ -790,6 +868,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick1 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -799,6 +878,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick1Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -807,13 +887,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick1Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 2:
                     if (Input.GetAxis("Joystick2 X") == 0)
                     {
@@ -826,6 +909,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick2 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -835,6 +919,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick2Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -843,13 +928,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick2Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 3:
                     if (Input.GetAxis("Joystick3 X") == 0)
                     {
@@ -862,6 +950,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick3 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -871,6 +960,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick3Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -879,13 +969,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick3Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 4:
                     if (Input.GetAxis("Joystick4 X") == 0)
                     {
@@ -898,6 +991,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick4 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -907,6 +1001,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick4Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -915,13 +1010,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick4Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 5:
                     if (Input.GetAxis("Joystick5 X") == 0)
                     {
@@ -934,6 +1032,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick5 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -943,6 +1042,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick5Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -951,13 +1051,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick5Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 case 6:
                     if (Input.GetAxis("Joystick6 X") == 0)
                     {
@@ -970,6 +1073,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]++;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     else if (Input.GetAxis("Joystick6 X") < 0 && !playerChooseState[3] && !isPlayerConfirmed[3])//Left
@@ -979,6 +1083,7 @@ public class MenuManager : MonoBehaviour
                             ControllerManager.instance.playerCharacterIndex[3]--;
                             playerIcons[3].GetComponent<RectTransform>().localPosition += new Vector3(-300, 0, 0);
                             playerChooseState[3] = true;
+                            RuntimeManager.PlayOneShot("event:/Interface/Select");
                         }
                     }
                     if (Input.GetKeyDown(KeyCode.Joystick6Button3) && !isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]])//Y/△
@@ -987,13 +1092,16 @@ public class MenuManager : MonoBehaviour
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = true;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(true);
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].sprite = selectImages[3];
+                        RuntimeManager.PlayOneShot("event:/Interface/Confirm");
                     }
                     else if (Input.GetKeyDown(KeyCode.Joystick6Button3) && isPlayerConfirmed[3])//Y/△
                     {
                         isPlayerConfirmed[3] = false;
                         isCharacterSelected[ControllerManager.instance.playerCharacterIndex[3]] = false;
                         outlines[ControllerManager.instance.playerCharacterIndex[3]].gameObject.SetActive(false);
-                    }                    break;
+                        RuntimeManager.PlayOneShot("event:/Interface/Cancel");
+                    }
+                    break;
                 default: break;
             }
         }
@@ -1010,6 +1118,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[0] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
         if (Input.GetJoystickNames().Length > 1)
@@ -1021,6 +1130,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[1] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
         if (Input.GetJoystickNames().Length > 2)
@@ -1032,6 +1142,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[2] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
         if (Input.GetJoystickNames().Length > 3)
@@ -1043,6 +1154,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[3] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
         if (Input.GetJoystickNames().Length > 4)
@@ -1054,6 +1166,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[4] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
         if (Input.GetJoystickNames().Length > 5)
@@ -1065,6 +1178,7 @@ public class MenuManager : MonoBehaviour
                 playerIcons[ControllerManager.instance.joinedPlayer].SetActive(true);
                 isControllerJoined[5] = true;
                 ControllerManager.instance.joinedPlayer++;
+                RuntimeManager.PlayOneShot("event:/Interface/Confirm");
             }
         }
     }

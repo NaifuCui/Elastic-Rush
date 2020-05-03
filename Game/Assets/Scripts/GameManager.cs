@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour
             Time.timeScale = 1;
             isPaused = false;
             pausePanel.SetActive(false);
-            inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            inGamePause.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         }
         else
         {
@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
 
     void Restart()
     {
-        inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        inGamePause.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         speedUpSound.StopSound();
         alertSound.StopSound();
         Time.timeScale = 1;
@@ -141,7 +141,7 @@ public class GameManager : MonoBehaviour
     void BackToMenu()
     {
         Time.timeScale = 1;
-        inGamePause.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        inGamePause.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
         Destroy(ControllerManager.instance.gameObject);
         speedUpSound.StopSound();
         alertSound.StopSound();
@@ -171,6 +171,7 @@ public class GameManager : MonoBehaviour
     {
         winPanel.SetActive(true);
         BgmManager.SetActive(false); //level bgm disabled
+        speedUpSound.StopSound();
         winText.text = "Player" + (playerNum + 1).ToString() + " Win!";
         isEnded = true;
         Time.timeScale = 0;

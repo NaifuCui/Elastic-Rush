@@ -7,13 +7,694 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 00000240013E5E28 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000207F4697738 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 3296
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD834B88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Hover', format=2, channels=1, frequency=48000, lengthbytes=864, lengthpcm=3757, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.115387.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 4800
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 3296
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD834B88
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Confirm', format=2, channels=1, frequency=48000, lengthbytes=2304, lengthpcm=11243, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.117188.
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Music.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002074CDDDFD8 : node = 00000207DB51E0B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002074CDDDFD8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Music.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 1312704
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5024
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E1C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Elastic Rush Theme', format=2, channels=2, frequency=48000, lengthbytes=942528, lengthpcm=3900952, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.817993.
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Warning 2', format=2, channels=2, frequency=48000, lengthbytes=10080, lengthpcm=35228, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.267164.
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Warning 4', format=2, channels=2, frequency=48000, lengthbytes=9920, lengthpcm=35241, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.262916.
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Warning 5', format=2, channels=2, frequency=48000, lengthbytes=9920, lengthpcm=35213, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.287750.
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             :     exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             :     exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             :     exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            :     register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             :     Sample 0/1: name='Warning 3', format=2, channels=2, frequency=48000, lengthbytes=9920, lengthpcm=35325, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.253104.
+[LOG] SystemI::createSoundInternal             :     Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002074CDDDFD8
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Speed up wind sound', format=2, channels=2, frequency=48000, lengthbytes=92864, lengthpcm=364114, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.245675.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Warning 6', format=2, channels=2, frequency=48000, lengthbytes=10240, lengthpcm=36211, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.272952.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Warning 1', format=2, channels=2, frequency=48000, lengthbytes=9888, lengthpcm=34573, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.375246.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD831E28
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Cyberpunk surroundings', format=2, channels=2, frequency=48000, lengthbytes=25376, lengthpcm=164438, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.936443.
+[LOG] SoundI::getSubSound                      : sound 000002074CDDDFD8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002074CDDE338 : node = 00000207DB51E1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002074CDDE338
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002074CDDE338
+[LOG] SoundI::getSubSound                      : sound 000002074CDDE338.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 72608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD8336E8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Landing', format=2, channels=2, frequency=48000, lengthbytes=2592, lengthpcm=11764, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.716306.
+[LOG] SoundI::release                          : Elastic Rush Title (00000207F4B51688)
+[LOG] SoundI::release                          :     Elastic Rush Title (00000207AFCF5D78)
+[LOG] SoundI::release                          :     Elastic Rush Title (00000207F4B51B98)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 72608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207DBCE72C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Dash-remake', format=2, channels=2, frequency=48000, lengthbytes=3680, lengthpcm=12422, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.981055.
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B50908 : node = 00000207DB51E330
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B50908
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B50908
+[LOG] SoundI::getSubSound                      : sound 00000207F4B50908.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 72608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207DBCE70B8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Freeze gun pickup', format=2, channels=2, frequency=48000, lengthbytes=8096, lengthpcm=19583, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.906055.
+[LOG] SoundI::release                          : Future city surroundings (000002074CDDE338)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D91943C8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4258F88)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4257998 : node = 00000207DB51E5B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4257998
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4257998
+[LOG] SoundI::getSubSound                      : sound 00000207F4257998.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 72608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207DBCE74D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Sonic gun pickup', format=2, channels=2, frequency=48000, lengthbytes=9216, lengthpcm=25466, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.607928.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SoundI::release                          : Future city surroundings (00000207F4B50908)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D9196788)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4B51688)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B51688 : node = 00000207DB51E6F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B51688
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E800
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B51688
+[LOG] SoundI::getSubSound                      : sound 00000207F4B51688.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B50908 : node = 00000207DB51E330
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B50908
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B50908
+[LOG] SoundI::getSubSound                      : sound 00000207F4B50908.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B50AB8 : node = 00000207DB51E1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B50AB8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B50AB8
+[LOG] SoundI::getSubSound                      : sound 00000207F4B50AB8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Future city surroundings (00000207F4257998)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D919A068)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4258F88)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4258F88 : node = 00000207DB51E470
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4258F88
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4258F88
+[LOG] SoundI::getSubSound                      : sound 00000207F4258F88.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002074CDDE338 : node = 00000207DB51E5B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002074CDDE338
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002074CDDE338
+[LOG] SoundI::getSubSound                      : sound 000002074CDDE338.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD444228 : node = 00000207D9162210
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD444228
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D9162320
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD444228
+[LOG] SoundI::getSubSound                      : sound 00000207AD444228.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Future city surroundings (00000207F4B51688)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D91999E8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4B51B98)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD4443D8 : node = 00000207D9162710
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD4443D8
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D9162820
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD4443D8
+[LOG] SoundI::getSubSound                      : sound 00000207AD4443D8.  Subsound index 0 / 1
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD444A98 : node = 00000207D91620D0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD444A98
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D91621E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD444A98
+[LOG] SoundI::getSubSound                      : sound 00000207AD444A98.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : Future city surroundings (00000207F4B50908)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D91943C8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4B50FC8)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD444738 : node = 00000207D9162350
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD444738
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D9162460
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD444738
+[LOG] SoundI::getSubSound                      : sound 00000207AD444738.  Subsound index 0 / 1
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 72608
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 12032
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000049B6C2F20C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCF3848630
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCF3848600
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCF3848700
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCF38487C0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000207AD832458
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Death', format=2, channels=2, frequency=48000, lengthbytes=14752, lengthpcm=69999, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.503892.
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SoundI::release                          : Engine hovering (00000207F4B50AB8)
+[LOG] SoundI::release                          :     Engine hovering (00000207D91962A8)
+[LOG] SoundI::release                          :     Engine hovering (00000207AFE06C48)
+[WRN] PlaylistInstrumentInstance::startFullLengthHook : Attempting to schedule a sound in the past, this could cause inaccurate playback.
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B50908 : node = 00000207D9162490
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B50908
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D91625A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B50908
+[LOG] SoundI::getSubSound                      : sound 00000207F4B50908.  Subsound index 0 / 1
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : Future city surroundings (00000207F4258F88)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D91950C8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4257998)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B51688 : node = 00000207D91625D0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B51688
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207D91626E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B51688
+[LOG] SoundI::getSubSound                      : sound 00000207F4B51688.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Engine hovering (000002074CDDE338)
+[LOG] SoundI::release                          :     Engine hovering (00000207D91948A8)
+[LOG] SoundI::release                          :     Engine hovering (00000207AD444078)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4B51B98 : node = 00000207DB51E1F0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4B51B98
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E300
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4B51B98
+[LOG] SoundI::getSubSound                      : sound 00000207F4B51B98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Engine hovering (00000207AD444228)
+[LOG] SoundI::release                          :     Engine hovering (00000207D9196C68)
+[LOG] SoundI::release                          :     Engine hovering (00000207AD4448E8)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207F4257998 : node = 00000207DB51E330
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207F4257998
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E440
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207F4257998
+[LOG] SoundI::getSubSound                      : sound 00000207F4257998.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Future city surroundings (00000207AD4443D8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D9195748)
+[LOG] SoundI::release                          :     Future city surroundings (00000207AD444C48)
+[LOG] SoundI::release                          : Engine hovering (00000207AD444A98)
+[LOG] SoundI::release                          :     Engine hovering (00000207D9199028)
+[LOG] SoundI::release                          :     Engine hovering (00000207AD444588)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD444588 : node = 00000207DB51E470
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD444588
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E580
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Future city surroundings', format=2, channels=2, frequency=48000, lengthbytes=170304, lengthpcm=659069, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.888304.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD444588
+[LOG] SoundI::getSubSound                      : sound 00000207AD444588.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Future city surroundings (00000207AD444738)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D9198668)
+[LOG] SoundI::release                          :     Future city surroundings (00000207AD444DF8)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000207AD444A98 : node = 00000207DB51E5B0
+[LOG] SystemI::createSound                     : add node to async list : head = 00000207F3539A88.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000207AD444A98
+[LOG] SystemI::createSoundInternal             :     Create name='FMOD\Elastic Rush Sounds\Build\Desktop/Ambience.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 484608
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 9216
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000207DB51E6C0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Engine hovering', format=2, channels=2, frequency=48000, lengthbytes=135264, lengthpcm=702459, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.348118.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000207AD444A98
+[LOG] SoundI::getSubSound                      : sound 00000207AD444A98.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Engine hovering (00000207F4B50908)
+[LOG] SoundI::release                          :     Engine hovering (00000207D9197FE8)
+[LOG] SoundI::release                          :     Engine hovering (00000207F4B50AB8)
+[LOG] SoundI::release                          : Future city surroundings (00000207F4B51688)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D91962A8)
+[LOG] SoundI::release                          :     Future city surroundings (00000207F4B50FC8)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : Elastic Rush Theme (000002074CDDDFD8)
+[LOG] SoundI::release                          :     Elastic Rush Theme (00000207D9198188)
+[LOG] SoundI::release                          :     Elastic Rush Theme (000002074CDDE188)
+[LOG] SoundI::release                          : Engine hovering (00000207AD444A98)
+[LOG] SoundI::release                          :     Engine hovering (00000207D9197968)
+[LOG] SoundI::release                          :     Engine hovering (00000207AD444C48)
+[LOG] SoundI::release                          : Engine hovering (00000207F4B51B98)
+[LOG] SoundI::release                          :     Engine hovering (00000207D9196788)
+[LOG] SoundI::release                          :     Engine hovering (00000207F4258F88)
+[LOG] SoundI::release                          : Future city surroundings (00000207AD444588)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D9196448)
+[LOG] SoundI::release                          :     Future city surroundings (00000207AD4448E8)
+[LOG] SoundI::release                          : Future city surroundings (00000207F4257998)
+[LOG] SoundI::release                          :     Future city surroundings (00000207D9195A88)
+[LOG] SoundI::release                          :     Future city surroundings (00000207AD444078)
+[LOG] SoundI::release                          :  (00000207ACA6CE28)
+[LOG] SoundI::release                          :     Warning 2 (00000207D9198B48)
+[LOG] SoundI::release                          :  (00000207ACA6C418)
+[LOG] SoundI::release                          :     Warning 4 (00000207D9194708)
+[LOG] SoundI::release                          :  (00000207ACA6EDC8)
+[LOG] SoundI::release                          :     Warning 5 (00000207D9195F68)
+[LOG] SoundI::release                          :  (00000207ACA6D3E8)
+[LOG] SoundI::release                          :     Warning 6 (00000207D91984C8)
+[LOG] SoundI::release                          :  (00000207ACA6BA08)
+[LOG] SoundI::release                          :     Warning 1 (00000207D9197CA8)
+[LOG] SoundI::release                          :  (00000207ACA6C588)
+[LOG] SoundI::release                          :     Warning 3 (00000207D91972E8)
+[LOG] SoundI::release                          :  (00000207ACA6EAE8)
+[LOG] SoundI::release                          :     Speed up wind sound (00000207D9199EC8)
+[LOG] SoundI::release                          :  (00000207ACA6E248)
+[LOG] SoundI::release                          :     Cyberpunk surroundings (00000207D9196AC8)
+[LOG] SoundI::release                          :  (00000207ACA6DB18)
+[LOG] SoundI::release                          :     Hover (00000207D9197B08)
+[LOG] SoundI::release                          :  (00000207ACA6C6F8)
+[LOG] SoundI::release                          :     Confirm (00000207D91958E8)
+[LOG] SoundI::release                          :  (00000207ACA6EF38)
+[LOG] SoundI::release                          :     Sonic gun pickup (00000207D919A3A8)
+[LOG] SoundI::release                          :  (00000207ACA6F218)
+[LOG] SoundI::release                          :     Freeze gun pickup (00000207D9196108)
+[LOG] SoundI::release                          :  (00000207ACA6EC58)
+[LOG] SoundI::release                          :     Dash-remake (00000207D9199848)
+[LOG] SoundI::release                          :  (00000207ACA6E698)
+[LOG] SoundI::release                          :     Landing (00000207D9198328)
+[LOG] SoundI::release                          :  (00000207ACA6F0A8)
+[LOG] SoundI::release                          :     Death (00000207D9197628)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
@@ -28,4 +709,6 @@
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
 [LOG] SystemI::close                           : Closed.
